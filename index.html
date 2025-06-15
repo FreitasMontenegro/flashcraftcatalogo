@@ -1,0 +1,97 @@
+<!-- index.html ATUALIZADO -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHCRAFT - Catálogo de Impressões 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="loguei-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="loguei.png" alt="Logo">
+            <h1 style="color: #A54AA4;">FLASHCRAFT</h1>
+        </div>
+        <p class="slogan">Cada detalhe conta. Cada camada também.</p>
+    </header>
+
+    <h2 class="titulo-catalogo">NOSSO CATÁLOGO DE IMPRESSÕES 3D</h2>
+
+    <main>
+        <aside>
+            <div class="slideshow-externo">
+                <div class="slideshow-container" id="slideshow">
+                    <div class="slide"><img src="prop1.JPG"></div>
+                    <div class="slide"><img src="prop2.JPG"></div>
+                    <div class="slide"><img src="prop3.JPG"></div>
+                    <div class="slide"><img src="Flamengo.png"></div>
+                    <div class="slide"><img src="prop5.JPG"></div>
+                </div>
+                <div class="slideshow-controls">
+                    <span class="prev">&#10094;</span>
+                    <span class="next">&#10095;</span>
+                </div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <h3>Filtre por Categoria:</h3>
+            <div class="categorias">
+                <div><input type="checkbox" id="c01"><label for="c01">Categoria 1</label></div>
+                <div><input type="checkbox" id="c02"><label for="c02">Categoria 2</label></div>
+                <div><input type="checkbox" id="c03"><label for="c03">Categoria 3</label></div>
+                <div><input type="checkbox" id="c04"><label for="c04">Categoria 4</label></div>
+                <div><input type="checkbox" id="c05"><label for="c05">Categoria 5</label></div>
+                <div><input type="checkbox" id="c06"><label for="c06">Categoria 6</label></div>
+                <div><input type="checkbox" id="c07"><label for="c07">Categoria 7</label></div>
+                <div><input type="checkbox" id="c08"><label for="c08">Categoria 8</label></div>
+                <div><input type="checkbox" id="c09"><label for="c09">Categoria 9</label></div>
+                <div><input type="checkbox" id="c10"><label for="c10">Categoria 10</label></div>
+                <div><input type="checkbox" id="c11"><label for="c11">Categoria 11</label></div>
+                <div><input type="checkbox" id="c12"><label for="c12">Categoria 12</label></div>
+                <div><input type="checkbox" id="c13"><label for="c13">Categoria 13</label></div>
+                <div><input type="checkbox" id="c14"><label for="c14">Categoria 14</label></div>
+                <div><input type="checkbox" id="c15"><label for="c15">Categoria 15</label></div>
+                <div><input type="checkbox" id="c16"><label for="c16">Categoria 16</label></div>
+                <div><input type="checkbox" id="c17"><label for="c17">Categoria 17</label></div>
+                <div><input type="checkbox" id="c18"><label for="c18">Categoria 18</label></div>
+                <div><input type="checkbox" id="c19"><label for="c19">Categoria 19</label></div>
+                <div><input type="checkbox" id="c20"><label for="c20">Categoria 20</label></div>
+            </div>
+
+            <div class="contato">
+                <p>📞 <span>CONTATE-NOS!</span></p>
+                <p><strong>WHATSAPP:</strong> 4002-8922</p>
+                <p><strong>E-MAIL:</strong> esc@spfc.com</p>
+                <p><strong>INSTAGRAM:</strong> @instadosite</p>
+                <img src="qrinst.png" alt="QR Instagram">
+                <p>INSTAGRAM</p>
+            </div>
+        </aside>
+
+        <section class="catalogo-container">
+            <div class="topo-catalogo">
+                <input type="text" id="pesquisa" placeholder="Pesquisar por nome...">
+                <select id="ordenar">
+                    <option value="relevancia">Relevância</option>
+                    <option value="precoMaior">Preço (maior para menor)</option>
+                    <option value="precoMenor">Preço (menor para maior)</option>
+                    <option value="alfabetica">Ordem Alfabética</option>
+                    <option value="avaliacao">Melhores Avaliações</option>
+                </select>
+                <p class="quantidade-itens"><span id="qtdItens">16</span> itens encontrados</p>
+            </div>
+            <div class="grid-itens" id="itens"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
