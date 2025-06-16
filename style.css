@@ -302,3 +302,29 @@ aside h3 {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 768px) {
+    .categorias {
+        display: none;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .categorias.ativa {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .botao-categorias {
+        display: block;
+        background-color: var(--turquesa);
+        color: var(--preto);
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
